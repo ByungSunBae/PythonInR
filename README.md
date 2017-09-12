@@ -16,3 +16,4 @@ As using reticulate, I also try to pytorch in R.
  * reticulate : https://rstudio.github.io/reticulate/
  * pytorch in R : https://github.com/longhowlam/ReticulateTestDrive/blob/master/pytorch.R
  * tensorflow examples : https://github.com/aymericdamien/TensorFlow-Examples
+ 
