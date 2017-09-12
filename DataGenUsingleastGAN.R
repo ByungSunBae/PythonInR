@@ -23,11 +23,13 @@ FraudCredit[, c("Time", "Amount", "Class") := list(NULL, NULL, NULL)]
 
 FraudCredit <- FraudCredit[sample(1:nrow(FraudCredit), size = 10000)]
 
-MeanVecs <- apply(FraudCredit, 2, mean)
-SDVecs <- apply(FraudCredit, 2, sd)
-CovMat <- cov(FraudCredit)
+# MeanVecs <- apply(FraudCredit, 2, mean)
+# SDVecs <- apply(FraudCredit, 2, sd)
+# CovMat <- cov(FraudCredit)
 
 FraudCredit <- as.data.table(scale(FraudCredit))
+MeanVecs <- apply(FraudCredit, 2, mean)
+CovMat <- cov(FraudCredit)
 
 summary(FraudCredit)
 # FraudCredit
