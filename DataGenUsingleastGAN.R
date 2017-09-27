@@ -3,6 +3,8 @@
 ########################################################
 library(data.table)
 library(reticulate)
+use_python("/usr/bin/python3", required = TRUE)
+
 library(tensorflow)
 library(ggplot2)
 library(MASS)
@@ -33,8 +35,6 @@ CovMat <- cov(FraudCredit)
 
 summary(FraudCredit)
 # FraudCredit
-
-
 tf <- import("tensorflow")
 contrib <- tf$contrib
 np <- import("numpy")
