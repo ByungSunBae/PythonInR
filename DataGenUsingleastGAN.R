@@ -5,6 +5,8 @@ library(data.table)
 library(reticulate)
 use_python("/usr/bin/python3", required = TRUE)
 
+# This is test about Rstudio-server pro.
+
 library(tensorflow)
 library(ggplot2)
 library(MASS)
